@@ -4,13 +4,15 @@
   <th>name</th>
   <th>date of birth</th>
   <th>salary</th>
+    <th>gender</th>
 </tr>
 
 <tr *ngFor = "let employee of employees;trackBy:trackCode;">
   <td>{{employee.code | uppercase}}</td>
-    <td>{{employee.name}}</td>
+    <td>{{employee.name | employeepipe: employee.gender}}</td>
   <td>{{employee.dob | date:'MM/dd/y'}}</td>
   <td>{{employee.salary | currency:'USD':true:'1.3-3'}}</td>
+  <td>{{employee.gender}}</td>
 </tr>
 </table>
 <br>
