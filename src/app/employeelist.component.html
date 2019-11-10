@@ -1,0 +1,27 @@
+<table>
+  <tr>
+  <th>code</th>
+  <th>name</th>
+  <th>date of birth</th>
+  <th>index</th>
+  <th>first</th>
+  <th>last</th>
+  <th>even</th>
+  <th>odd</th>
+</tr>
+
+<tr *ngFor = "let employee of employees;trackBy:trackCode;let i =index;let isFirst = first;let isLast = last; let isEven = even; let isOdd = odd">
+  <td>{{employee.code}}</td>
+    <td>{{employee.name}}</td>
+  <td>{{employee.dob}}</td>
+<td>{{i}}</td>
+<td>{{isFirst}}</td>
+<td>{{isLast}}</td>
+<td>{{isEven}}</td>
+<td>{{isOdd}}</td>
+</tr>
+</table>
+<br>
+<button (click) = "getEmployees()">
+  get Employees
+</button>
