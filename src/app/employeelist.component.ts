@@ -10,18 +10,19 @@ export class EmployeeListComponent{
 this.employees = [
   {code:'emp1', name:'hari', dob:'04/02/1996',salary:'5000',gender:'male'},
   {code:'emp2', name:'harideep', dob:'04/03/1996',salary:'5500',gender:'male'},
-  {code:'emp3', name:'haris', dob:'04/04/1996',salary:'5654',gender:'male'}
-];
-  }
-getEmployees(): void{
-  this.employees = [
-{code:'emp1', name:'hari', dob:'04/02/1996',salary:'5000',gender:'male'},
-  {code:'emp2', name:'harideep', dob:'04/03/1996',salary:'5500',gender:'male'},
   {code:'emp3', name:'haris', dob:'04/04/1996',salary:'5654',gender:'male'},
   {code:'emp4', name:'shree', dob:'04/05/1996',salary:'6342',gender:'female'}
-  ];
+];
   }
-  trackCode(index:number,employee:any): string{
-    return employee.code
-  }
+// getEmployees(): void{
+//   this.employees = [
+// {code:'emp1', name:'hari', dob:'04/02/1996',salary:'5000',gender:'male'},
+//   {code:'emp2', name:'harideep', dob:'04/03/1996',salary:'5500',gender:'male'},
+//   {code:'emp3', name:'haris', dob:'04/04/1996',salary:'5654',gender:'male'},
+//   {code:'emp4', name:'shree', dob:'04/05/1996',salary:'6342',gender:'female'}
+//   ];
+//   }
+//   trackCode(index:number,employee:any): string{
+//     return employee.code
+//   }
 }
