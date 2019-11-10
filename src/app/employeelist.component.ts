@@ -14,6 +14,16 @@ this.employees = [
   {code:'emp4', name:'shree', dob:'04/05/1996',salary:'6342',gender:'female'}
 ];
   }
+  getTotalEmployeesCount(): number{
+    return this.employees.length;
+  }
+  getTotalMaleEmployeesCount(): number{
+    return this.employees.filter(e=> e.gender === 'male').length;
+  }
+  getTotalFemaleEmployeesCount(): number{
+    return this.employees.filter(e => e.gender === 'female').length;
+  }
+
 // getEmployees(): void{
 //   this.employees = [
 // {code:'emp1', name:'hari', dob:'04/02/1996',salary:'5000',gender:'male'},
